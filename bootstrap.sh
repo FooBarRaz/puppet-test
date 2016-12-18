@@ -1,6 +1,8 @@
 #!/bin/bash
 
-wget http://apt.puppetlabs.com/puppetlabs-release-trusty.deb
-dpkg -i /tmp/puppetlabs-release-trusty.deb
+cd /tmp
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+sudo dpkg -i /tmp/puppetlabs-release-pc1-xenial.deb
+
 apt-get update
-apt-get install puppet
+apt-get install -y puppet-agent
